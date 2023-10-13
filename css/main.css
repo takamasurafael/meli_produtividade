@@ -51,7 +51,6 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     min-height: 100vh;
 
     z-index: 999;
@@ -61,18 +60,15 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
+    max-width: 1.7vw;
     min-height: 100vh;
 }
 
 nav ul li {
     display: flex;
-    width: 0.3vw;
-    height: 12vh;
-    background-color: var(--color7);
+    align-items: center;
+    justify-content: center;
     color: transparent;
-    overflow: hidden;
-    transition: 0.2s;
 }
 
 nav ul #sauronLi {
@@ -103,19 +99,6 @@ nav ul #nav10 {
     border-color: var(--color11);
 }
 
-nav:hover ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 7vw;
-    min-height: 12vh;
-    background-color: var(--color1);
-    color: var(--color6);
-    border-right: 5px solid;
-    border-color: var(--color7);
-}
-
 nav:hover ul #outgoingLi {
     background-color: var(--color15);
     border-color: var(--color16);
@@ -132,16 +115,16 @@ nav:hover ul #sauronLi {
 }
 
 nav ul li a {
-    display: none;
-}
-
-nav ul li:hover {
-    width: 23vw;
-    background-color: var(--color1);
-}
-
-nav ul li:hover span {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color6);
+    background-color: rgb(214, 172, 156);
+    min-width: 11vw;
+    height: 4vh;
+    transform: rotate(-90deg);
+    transition: .2s;
 }
 
 nav ul li:hover a {
@@ -150,12 +133,9 @@ nav ul li:hover a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 23vw;
-    height: 12vh;
-    background-color: var(--color1);
+    min-width: 11vw;
+    min-height: 4vh;
     color: var(--color6);
-    border-right: 5px solid;
-    border-color: var(--color7);
 }
 
 .frameFull {

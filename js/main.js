@@ -1,49 +1,9 @@
 function hideAllFrames() {
-  frameSeller.style.display = "none";
   frameDiferimento.style.display = "none";
-  frameFSR.style.display = "none";
-  frameBUG.style.display = "none";
   frame8.style.display = "none";
-  frameArvoreDiv.style.display = "none";
   frameArvore.style.display = "none";
   frame10.style.display = "none";
 }
-
-// Vendedor - Post Compra Funcionalidades
-const seller = document.getElementById("seller");
-const frameSeller = document.getElementById("frameSeller");
-const link4 =
-  "https://docs.google.com/presentation/d/1v4feoFH7cJHis5elol5IbnrwPR1WYMM0-x3a1nh-ZE8/edit#slide=id.g13ebedf89ed_341_0";
-seller.addEventListener("click", () => {
-  hideAllFrames();
-  frameSeller.style.display = "flex";
-  frameSeller.src = link4;
-});
-
-// FSR
-const menuFSR = document.getElementById("menuFSR");
-const frameFSR = document.getElementById("frameFSR");
-const link5 =
-  "https://docs.google.com/presentation/d/1WfNpp3rs8pTXPV0V4kMZ3wBXetA14exz1pZ26ssyWMc/edit#slide=id.p1";
-menuFSR.addEventListener("click", () => {
-  hideAllFrames();
-  frameFSR.style.display = "flex";
-  frameFSR.src = link5;
-});
-
-// BUG
-const menuBUG = document.getElementById("menuBUG");
-const frameBUG = document.getElementById("frameBUG");
-const link6 =
-  "https://docs.google.com/presentation/d/1YdGGQFKiVCKZh1gKpVyIbCW_C42CWS0DvHgvEtcQihw/edit#slide=id.g22d184d4d76_495_3597";
-menuBUG.addEventListener("click", () => {
-  hideAllFrames();
-  frameBUG.style.display = "flex";
-  frameBUG.style.transform = "scale(.1)";
-  frameBUG.style.width = "1000vw";
-  frameBUG.style.height = "1000vh";
-  frameBUG.src = link6;
-});
 
 // Outgoing
 const nav8 = document.getElementById("nav8");
@@ -57,7 +17,7 @@ nav8.addEventListener("click", () => {
   frame8frame.src = link8;
 });
 
-// Árvore Transferências
+// Transferências
 const arvore = document.getElementById("arvore");
 const frameArvore = document.getElementById("frameArvore");
 const link9 =
@@ -70,7 +30,6 @@ arvore.addEventListener("click", () => {
 
 arvore.addEventListener("click", () => {
   hideAllFrames();
-  frameArvoreDiv.style.display = "flex";
   frameArvore.style.display = "flex";
 
   frameArvore.src = link9;
@@ -123,8 +82,4 @@ diferimento.addEventListener("click", () => {
   hideAllFrames();
   frameDiferimento.style.display = "flex";
   frameDiferimento.src = link11;
-  setTimeout(() => {
-    frameDiferimento.style.position = "absolute";
-    frameDiferimento.style.top = "-20vh";
-  }, 5000);
 });

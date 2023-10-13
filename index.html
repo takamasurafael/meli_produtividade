@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fluxos PPT</title>
+    <title>Produtividade</title>
 
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -11,7 +11,21 @@
     <script src="./js/mainProdutividade.js" defer></script>
   </head>
   <body>
-    <!-- Inicio Produtivade -->
+    <nav>
+      <ul>
+        <li id="outgoingLi"><a id="nav8" href="#frame8">Outgoing</a></li>
+        <li id="arvoreLi">
+          <a id="arvore" href="#frameArvore">Transferências</a>
+        </li>
+        <li id="sauronLi"><a id="nav10" href="#frame10">Sauron</a></li>
+
+        <li>
+          <a id="diferimento" href="#frameDiferimento">Diferimento</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Produtividade -->
     <div id="frame8">
       <div id="produ">
         <header>
@@ -28,6 +42,19 @@
         src="https://docs.google.com/forms/d/e/1FAIpQLSfWz5Kd7r5ADnc_z6z9VwEd1raCPA1IBp6CTcKnZUteehVWAg/viewform"
       ></iframe>
     </div>
-    <!-- Fim Produtivade -->
+
+    <!-- Transferencias -->
+    <div id="frameArvoreDiv">
+      <iframe id="frameArvore"></iframe>
+    </div>
+
+    <!-- Sauron -->
+    <div id="frame10">
+      <input id="inputField" type="text" placeholder="Cole o número da rota" />
+      <iframe id="frame10frame"></iframe>
+    </div>
+
+    <!-- Diferimento -->
+    <iframe id="frameDiferimento" class="frameFull"></iframe>
   </body>
 </html>
