@@ -256,7 +256,7 @@ nav ul li:hover a {
 
 #frameArvore {
     position: absolute;
-    left: 4vw;
+    left: 2vw;
     min-width: 115vw;
     min-height: 115vh;
     transform: scale(0.9);
