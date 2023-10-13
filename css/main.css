@@ -249,12 +249,12 @@ nav ul li:hover a {
 }
 
 #frameArvoreDiv {
+    margin-left: 5vw;
     min-width: 100vw;
     min-height: 100vh;
 }
 
 #frameArvore {
-    margin-left: 5vw;
     min-width: 115vw;
     min-height: 115vh;
     transform: scale(0.9);
