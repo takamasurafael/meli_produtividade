@@ -37,7 +37,7 @@ arvore.addEventListener("click", () => {
   setTimeout(() => {
     frameArvore.style.position = "absolute";
     frameArvore.style.top = "-6vh";
-    frameArvore.style.left = "-2vw";
+    frameArvore.style.left = "4vw";
   }, 5000);
 });
 
