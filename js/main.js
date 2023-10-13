@@ -38,7 +38,7 @@ arvore.addEventListener("click", () => {
     frameArvore.style.position = "absolute";
     frameArvore.style.top = "-6vh";
     frameArvore.style.left = "4vw";
-  }, 5000);
+  }, 2000);
 });
 
 // Sauron
