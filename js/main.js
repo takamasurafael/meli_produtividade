@@ -1,59 +1,57 @@
 function hideAllFrames() {
-  frameDiferimento.style.display = "none";
-  frame8.style.display = "none";
-  frameArvore.style.display = "none";
-  frame10.style.display = "none";
+  dProd.style.display = "none";
+  fTree.style.display = "none";
+  fDife.style.display = "none";
+  dSaur.style.display = "none";
+
+  aOutg.classList.remove("activeMenu");
+  aTree.classList.remove("activeMenu");
+  aSaur.classList.remove("activeMenu");
+  aDife.classList.remove("activeMenu");
 }
 
 // Outgoing
-const nav8 = document.getElementById("nav8");
-const frame8 = document.getElementById("frame8");
-const frame8frame = document.getElementById("frame8frame");
-const link8 =
+const aOutg = document.getElementById("aOutg");
+const dProd = document.getElementById("dProd");
+const fProd = document.getElementById("fProd");
+const linkOutg =
   "https://docs.google.com/forms/d/e/1FAIpQLSfWz5Kd7r5ADnc_z6z9VwEd1raCPA1IBp6CTcKnZUteehVWAg/viewform";
-nav8.addEventListener("click", () => {
+aOutg.addEventListener("click", () => {
   hideAllFrames();
-  frame8.style.display = "flex";
-  frame8frame.src = link8;
+
+  aOutg.classList.add("activeMenu");
+  dProd.style.display = "flex";
+  fProd.src = linkOutg;
 });
 
 // Transferências
-const arvore = document.getElementById("arvore");
-const frameArvore = document.getElementById("frameArvore");
-const link9 =
+const aTree = document.getElementById("aTree");
+const fTree = document.getElementById("fTree");
+const linkTree =
   "https://docs.google.com/spreadsheets/d/1gZUzmgcIbUvftx42l_Ws_6zxzxbv1LA1ZN19fwPaEtY/edit#gid=1208426721";
-arvore.addEventListener("click", () => {
+aTree.addEventListener("click", () => {
   hideAllFrames();
-  frameArvore.style.display = "flex";
-  frameArvore.src = link9;
-});
 
-arvore.addEventListener("click", () => {
-  hideAllFrames();
-  frameArvore.style.display = "flex";
-
-  frameArvore.src = link9;
-
-  setTimeout(() => {
-    frameArvore.style.position = "absolute";
-    frameArvore.style.top = "-6vh";
-    frameArvore.style.left = "4vw";
-  }, 2000);
+  aTree.classList.add("activeMenu");
+  fTree.style.display = "flex";
+  fTree.src = linkTree;
 });
 
 // Sauron
-const nav10 = document.getElementById("nav10");
-const frame10 = document.getElementById("frame10");
-const link10 =
+const aSaur = document.getElementById("aSaur");
+const dSaur = document.getElementById("dSaur");
+const linkSaur =
   "https://envios.mercadolivre.com.br/logistics/monitoring-distribution/detail/";
 
-nav10.addEventListener("click", () => {
+aSaur.addEventListener("click", () => {
   hideAllFrames();
-  frame10.style.display = "flex";
+
+  aSaur.classList.add("activeMenu");
+  dSaur.style.display = "flex";
 });
 
 const inputField = document.getElementById("inputField");
-const frame10frame = document.getElementById("frame10frame");
+const fSaur = document.getElementById("fSaur");
 
 inputField.addEventListener("paste", (event) => {
   event.preventDefault();
@@ -63,8 +61,8 @@ inputField.addEventListener("paste", (event) => {
 
   inputField.placeholder = "Número colado: " + numericValue;
 
-  frame10frame.src = link10 + numericValue;
-  inputField.value = "Link da rota pesquisada: " + link10 + numericValue;
+  fSaur.src = linkSaur + numericValue;
+  inputField.value = "Link da rota pesquisada: " + linkSaur + numericValue;
 });
 
 inputField.addEventListener("input", () => {
@@ -74,12 +72,15 @@ inputField.addEventListener("input", () => {
   numericValue = "";
 });
 
-const diferimento = document.getElementById("diferimento");
-const frameDiferimento = document.getElementById("frameDiferimento");
-const link11 =
+// Diferimento
+const aDife = document.getElementById("aDife");
+const fDife = document.getElementById("fDife");
+const linkDife =
   "https://docs.google.com/spreadsheets/d/1dEEPrRR89lJcgtOOypDYZs5kCl-G90a0ywwt6nEl1PA/edit#gid=1659494052";
-diferimento.addEventListener("click", () => {
+aDife.addEventListener("click", () => {
   hideAllFrames();
-  frameDiferimento.style.display = "flex";
-  frameDiferimento.src = link11;
+
+  aDife.classList.add("activeMenu");
+  fDife.style.display = "flex";
+  fDife.src = linkDife;
 });

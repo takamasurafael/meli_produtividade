@@ -8,10 +8,10 @@ produInput.addEventListener("paste", (e) => {
   e.preventDefault();
 
   const tempo = new Date();
-  const hora = tempo.getHours();
-  const minuto = tempo.getMinutes();
-  const horaFormatada = `${hora}:${minuto}`;
-  const horaFormatada2 = `${tempo.getHours()}:${tempo.getMinutes()}:${tempo.getSeconds()}`;
+  const hora = String(tempo.getHours()).padStart(2, "0");
+  const minutos = String(tempo.getMinutes()).padStart(2, "0");
+  const segundos = String(tempo.getSeconds()).padStart(2, "0");
+  const horaFormatada2 = `${hora}:${minutos}:${segundos}`;
 
   const clipboardData = e.clipboardData || window.clipboardData;
   const pastedData = clipboardData.getData("text");
@@ -26,9 +26,11 @@ produInput.addEventListener("paste", (e) => {
     );
 
     if (!isDuplicate) {
+      const sequenceNumberString =
+        sequenceNumber < 10 ? `0${sequenceNumber}` : sequenceNumber;
       const caseData = {
         id: sequenceNumber,
-        content: `${pastedData} - Caso #${sequenceNumber} - ${horaFormatada2}`,
+        content: `${pastedData} - Caso #${sequenceNumberString} - ${horaFormatada2}`,
       };
 
       casesData.push(caseData);
@@ -37,10 +39,10 @@ produInput.addEventListener("paste", (e) => {
       saveCasesToLocalStorage();
       renderCases();
     } else {
-      alert("Esse caso já está na lista");
+      alert("Caso já adicionado");
     }
   } else {
-    alert("Cole somente casos com 9 dígitos");
+    alert("Esse caso já foi adicionado!");
   }
 });
 

@@ -13,20 +13,15 @@
   <body>
     <nav>
       <ul>
-        <li id="outgoingLi"><a id="nav8" href="#frame8">Outgoing</a></li>
-        <li id="arvoreLi">
-          <a id="arvore" href="#frameArvore">Transferências</a>
-        </li>
-        <li id="sauronLi"><a id="nav10" href="#frame10">Sauron</a></li>
-
-        <li>
-          <a id="diferimento" href="#frameDiferimento">Diferimento</a>
-        </li>
+        <li><a id="aOutg" class="activeMenu" href="#dProd">Outgoing</a></li>
+        <li><a id="aTree" href="#fTree">Transferências</a></li>
+        <li><a id="aSaur" href="#dSaur">Sauron</a></li>
+        <li><a id="aDife" href="#fDife">Diferimento</a></li>
       </ul>
     </nav>
 
     <!-- Produtividade -->
-    <div id="frame8">
+    <div id="dProd" class="screenPadrao">
       <div id="produ">
         <header>
           <h1>Produtividade</h1>
@@ -38,23 +33,21 @@
       </div>
 
       <iframe
-        id="frame8frame"
+        id="fProd"
         src="https://docs.google.com/forms/d/e/1FAIpQLSfWz5Kd7r5ADnc_z6z9VwEd1raCPA1IBp6CTcKnZUteehVWAg/viewform"
       ></iframe>
     </div>
 
-    <!-- Transferencias Arvore -->
-    <div id="frameArvoreDiv">
-      <iframe id="frameArvore"></iframe>
+    <!-- Sauron -->
+    <div id="dSaur" class="screenPadrao">
+      <input id="inputField" type="text" placeholder="Cole o número da rota" />
+      <iframe id="fSaur"></iframe>
     </div>
 
-    <!-- Sauron -->
-    <div id="frame10">
-      <input id="inputField" type="text" placeholder="Cole o número da rota" />
-      <iframe id="frame10frame"></iframe>
-    </div>
+    <!-- Transferencias -->
+    <iframe id="fTree" class="screenPadrao"></iframe>
 
     <!-- Diferimento -->
-    <iframe id="frameDiferimento" class="frameFull"></iframe>
+    <iframe id="fDife" class="screenPadrao"></iframe>
   </body>
 </html>
