@@ -146,3 +146,7 @@ nav ul li a {
     height: 10vh;
     z-index: 50;
 }
+
+.screenPadrao #fSaur {
+    min-width: 98vw;
+}
