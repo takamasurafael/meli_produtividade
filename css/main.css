@@ -138,3 +138,11 @@ nav ul li a {
     background-color: red;
     cursor: pointer;
 }
+
+.screenPadrao #inputField {
+    position: absolute;
+    top: 0;
+    width: 98vw;
+    height: 10vh;
+    z-index: 50;
+}
