@@ -154,3 +154,7 @@ nav ul li a {
 .screenPadrao #fSaur {
     min-width: 98vw;
 }
+
+.screenPadrao #fTree {
+    transform: scale(.9);
+}
