@@ -55,8 +55,8 @@ nav ul li a {
     transform: rotate(-90deg);
     width: 25vh;
     padding: 1rem;
-    background-color: rgba(253, 255, 160, 0.863);
-    color: rgb(161, 161, 161);
+    background-color: rgba(194, 194, 194, 0.863);
+    color: rgb(122, 122, 122);
     font-weight: bold;
 }
 
