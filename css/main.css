@@ -133,7 +133,7 @@ nav ul li a {
 }
 
 .screenPadrao #produCasos p {
-    background-color: aqua;
+    background-color: #673ab7;
     margin-top: 1px;
     transition: .4s;
 }
