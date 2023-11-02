@@ -118,10 +118,10 @@ nav ul li a {
     width: 49vw;
     height: 10vh;
     text-align: center;
-    border: 0;
+    border: 1px solid #eeeeee;
     outline: 0;
     font-size: 2em;
-    background-color: yellow;
+    background-color: #fff;
 }
 
 .screenPadrao #produCasos {
