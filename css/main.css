@@ -83,6 +83,10 @@ nav ul li a {
     min-height: 100vh;
 }
 
+.screenPadrao #produ {
+    background-color: #1a1a1a;
+}
+
 .screenPadrao div header {
     display: flex;
     align-items: center;
