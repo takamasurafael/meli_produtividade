@@ -61,7 +61,7 @@ nav ul li a {
 }
 
 .activeMenu {
-    background-color: rgb(255, 251, 0);
+    background-color: #1a1a1a;
     color: rgb(68, 68, 68);
 }
 
